@@ -1,13 +1,12 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.MuiInputBase-root.MuiOutlinedInput-root input, .MuiInputLabel-root.MuiInputLabel-formControl, .MuiInputBase-formControl.MuiInputBase-sizeSmall {
+    font-size: 13px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.MuiInputBase-formControl.MuiInputBase-sizeSmall {
+    max-height: 34.25px;
+    height: 34.25px;
 }
